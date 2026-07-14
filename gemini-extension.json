@@ -1,0 +1,13 @@
+{
+  "name": "citestamp",
+  "version": "1.0.0",
+  "description": "Citation-health checks over CiteStamp's CC0 citation graph: what supports, refutes, or cites a paper — flags references that do not resolve or are marked retracted by the publisher. Requires a free API key (email info@citestamp.com); set it in the Authorization header below.",
+  "mcpServers": {
+    "citestamp": {
+      "httpUrl": "https://mcp.citestamp.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_KEY"
+      }
+    }
+  }
+}
