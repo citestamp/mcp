@@ -3,15 +3,14 @@
 CiteStamp is a HOSTED (remote) MCP server. There is no package to install, no code to
 clone, and nothing to run locally. Setup is two steps:
 
-1. **Get an API key.** Free keys are issued by email: the user emails
-   info@citestamp.com and receives a key (60 requests/min). If the user already has a
-   CiteStamp Pro token, that works too. There is no anonymous MCP access — a request
-   without a valid `Authorization` header returns 401.
+1. **No key required.** The server answers anonymously at 10 requests/min per IP —
+   configure it with no credentials and it works. A key is OPTIONAL and only raises the
+   rate: a free key by email to info@citestamp.com gives 60/min, a Pro token 600/min.
 
 2. **Add the remote server to the client's MCP configuration** with:
    - transport / type: `streamableHttp` (a.k.a. streamable-http / http)
    - URL: `https://mcp.citestamp.com/mcp`
-   - header: `Authorization: Bearer <the user's key>`
+   - header (OPTIONAL, only to raise the rate limit): `Authorization: Bearer <key>`
 
 For Cline specifically, the MCP settings entry is:
 
@@ -34,5 +33,5 @@ A quick functional test: call `references_of` with a DOI the user knows, e.g.
 
 Notes for the assistant:
 - Do not attempt `npx`, `pip`, `docker`, or any local install — the server is remote only.
-- Do not invent an API key or skip the header; a 401 means the key is missing/invalid.
+- No key is needed; if a key IS supplied it must be valid (a bad token is a loud 401, never a silent downgrade).
 - The tools are read-only; nothing in this server writes anywhere.

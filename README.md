@@ -15,7 +15,7 @@ citation graph. There is nothing to build or run locally — the server is remot
 | Endpoint | `https://mcp.citestamp.com/mcp` |
 | Transport | streamable-http |
 | Protocol | `2025-06-18` |
-| Auth | Bearer API key (free — email info@citestamp.com, 60 req/min; Pro raises limits) |
+| Auth | None to start — anonymous at 10 req/min per IP. An optional free key (email info@citestamp.com) raises to 60/min; Pro to 600/min |
 | Data | CC0 citation graph; human-signed and machine-inferred claims kept strictly apart |
 
 ## The five tools (all read-only)
