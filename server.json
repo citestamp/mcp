@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.citestamp/mcp",
+  "title": "CiteStamp",
+  "description": "Citation-health checks over a CC0 citation graph: what supports, refutes, or cites a paper, and which references do not resolve or are marked retracted. Five read-only tools, no key required.",
+  "version": "1.0.0",
+  "websiteUrl": "https://citestamp.com/for-ai",
+  "repository": {
+    "url": "https://github.com/citestamp/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.citestamp.com/mcp"
+    }
+  ]
+}
