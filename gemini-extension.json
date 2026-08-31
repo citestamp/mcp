@@ -1,6 +1,6 @@
 {
   "name": "citestamp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Citation-health checks over CiteStamp's CC0 citation graph: what supports, refutes, or cites a paper, and which references do not resolve or are marked retracted by the publisher. Hosted server, no key required.",
   "mcpServers": {
     "citestamp": {
