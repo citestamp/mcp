@@ -18,11 +18,13 @@ citation graph. There is nothing to build or run locally; the server is remote.
 | Auth | None. Anonymous at 10 requests/min per IP. An optional free key (email info@citestamp.com) raises that to 60/min; Pro to 600/min |
 | Data | CC0 citation graph; human-signed and machine-inferred claims kept strictly apart |
 
-## The five tools (all read-only)
+## The tools (all read-only)
 
 - `what_supports` / `what_refutes`: typed edges bearing on a claim
 - `what_cites` / `references_of`: the citing and cited works around a reference
 - `edges_about`: edges on a topic
+- `retraction_listing`: whether the Retraction Watch database lists a DOI as retracted, from the dated
+  export CiteStamp joins weekly. Not listed means not in that export; it does not check the publisher record
 
 Every result carries its tier: **accountable** edges are signed by a human identity
 (ORCID); **inferred** edges are machine-derived. Your agent can ask for signed-only.
