@@ -25,6 +25,10 @@ citation graph. There is nothing to build or run locally; the server is remote.
 - `edges_about`: edges on a topic
 - `retraction_listing`: whether the Retraction Watch database lists a DOI as retracted, from the dated
   export CiteStamp joins weekly. Not listed means not in that export; it does not check the publisher record
+- `check_reference`: whether a reference resolves to a real work, before an answer cites it. Give a DOI,
+  an arXiv id or the reference as written. It reads Crossref, DataCite and doi.org (which answers for every
+  DOI agency) and says found, confirm (with the reason), not found in the named sources on a date, or
+  couldn't check. A not-found is not proof that a work was never published
 
 Every result carries its tier: **accountable** edges are signed by a human identity
 (ORCID); **inferred** edges are machine-derived. Your agent can ask for signed-only.
