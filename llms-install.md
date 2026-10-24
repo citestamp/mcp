@@ -25,8 +25,9 @@ For Cline specifically, the MCP settings entry is:
 }
 ```
 
-Verification: after configuring, the server should list five read-only tools:
-`what_supports`, `what_refutes`, `what_cites`, `references_of`, `edges_about`.
+Verification: after configuring, the server should list seven read-only tools:
+`what_supports`, `what_refutes`, `what_cites`, `references_of`, `edges_about`,
+`retraction_listing` and `check_reference`.
 A quick functional test: call `references_of` with a DOI the user knows, e.g.
 `10.1371/journal.pmed.0020124`.
 

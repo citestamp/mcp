@@ -99,8 +99,10 @@ once you have a key.
 ## What this is not
 
 CiteStamp reports what public registries say at a dated point in time. It does not
-judge the truth or quality of any work, and its only verdict vocabulary is
-"does not resolve to a known work" and "marked retracted by the publisher".
+judge the truth or quality of any work. `check_reference` answers found, confirm (with
+the reason), not found in the named sources on a date, or couldn't check; a not-found
+is not proof a work was never published. `retraction_listing` says whether the dated
+Retraction Watch export lists a DOI, and does not check the publisher record.
 Statements about works, never about people.
 
 ## Links
