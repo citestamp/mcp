@@ -5,7 +5,7 @@ clone, and nothing to run locally. Setup is two steps:
 
 1. **No key required.** The server answers anonymously at 10 requests/min per IP.
    Configure it with no credentials and it works. A key is OPTIONAL and only raises the
-   rate: a free key by email to info@citestamp.com gives 60/min, a Pro token 600/min.
+   rate: a Pro token gives 600/min, up to 20,000 a day.
 
 2. **Add the remote server to the client's MCP configuration** with:
    - transport / type: `streamableHttp` (a.k.a. streamable-http / http)

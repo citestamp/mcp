@@ -15,7 +15,7 @@ citation graph. There is nothing to build or run locally; the server is remote.
 | Endpoint | `https://mcp.citestamp.com/mcp` |
 | Transport | streamable-http |
 | Protocol | `2025-06-18` |
-| Auth | None. Anonymous at 10 requests/min per IP. An optional free key (email info@citestamp.com) raises that to 60/min; Pro to 600/min |
+| Auth | None. Anonymous at 10 requests/min per IP. A Pro token raises that to 600/min, up to 20,000 a day |
 | Data | CC0 citation graph; human-signed and machine-inferred claims kept strictly apart |
 
 ## The tools (all read-only)
